@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* Remove scrollbars */   
+}
+#gameCanvas {
+    display: block;  /* Ensures no space around the canvas */
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('Assets/instructions-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container for Instructions */
+.instructions-container {
+    text-align: left;
+    padding: 40px;
+    width: 550px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #2c3e50, #4b6cb7);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    margin-left: 40px; /* Additional space on the left */
+}
+
+.instructions-list{
+    margin-left: 145px;
+}
+
+/* Title Styling */
+.instructions-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+/* Key-Description Pair Styling */
+.key-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 30px; /* Space between the key and its description */
+}
+
+.key {
+    background-color: #3498db;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    min-width: 80px;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    color: #e1e1e1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Goal Styling with Icy Theme */
+.goal {
+    font-size: 24px;
+    margin: 20px 0;
+    margin-left: 50px;
+    color: #00d8ff;
+    text-shadow: 0 0 8px #00ffff, 0 0 15px #00d8ff, 0 0 25px #1abc9c;
+    padding-left: 30px;
+}
+
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff4d4d;
+}
+
+/* Button Styling - Centered */
+button {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

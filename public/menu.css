@@ -1,0 +1,81 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('Assets/menu.png') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the screen */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container for Menu */
+.menu-container {
+    text-align: center;
+    padding: 40px;
+    width: 450px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #2c3e50, #4b6cb7); /* Frosty gradient */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+.menu-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 15px; /* Spacing between buttons */
+}
+
+button {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 18px 32px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

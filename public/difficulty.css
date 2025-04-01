@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Assets/menu.png') no-repeat center center fixed;
+    background-size: cover; /* Make sure the background covers the entire screen */
+}
+
+.difficulty-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.difficulty-options {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    margin-bottom: 20px;
+}
+
+.difficulty-btn {
+    background-color: #6ec1e4;
+    border: none;
+    padding: 15px 40px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.difficulty-btn:hover {
+    background-color: #4a90e2;
+}
+
+.confirm-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #e67e22;
+}
